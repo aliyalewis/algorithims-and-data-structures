@@ -26,17 +26,14 @@ def stronger(playerOne, playerTwo)
     a = "Left arm tie!"
   end
 
-    if playerOne[i + 1] > playerTwo[i + 1]
+  if playerOne[i + 1] > playerTwo[i + 1]
     b ="playerOne wins with right arm"
   elsif
     playerOne[i + 1] < playerTwo[i + 1]
     b ="playerTwo wins with right arm"
   else
     b = "Right arm tie!"
-    end
+  end
 
     return a, b
  end
-
- binding.pry
- 0
