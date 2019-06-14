@@ -10,20 +10,23 @@ reptitive_string = 'aabccccccaaaa'
 def string(reptitive_string)
   a = reptitive_string.split("")
 
-  loop do
-    
-    if a[0] == a[1]
+    i = 0
+    while (i < a.length)
+    if a[i] == a[i+1]
       aa = []
-      aa << a.slice!(0)
-      aa << a.slice!(0)
+      aa << a.slice!(i)
+      aa << a.slice!(i)
       aa
+      i += 1
+    else a[i] != a[i+1]
+      bb = []
+      bb << a.slice!(i)
+      bb
+      i+=1
     end
 
-    if a[0] != a[1]
-      bb = []
-      bb << a.slice!(0)
-      bb
-    end
+    # i += 1
+
     binding.pry
 
 
